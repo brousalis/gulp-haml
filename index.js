@@ -7,13 +7,13 @@ var _ = require('lodash');
 
 var compilers = {
   creationix: require('haml'),
-  visionmedia: require('hamljs'),
+  pete: require('hamljs'),
 };
 
 module.exports = function(opts) {
   var options = _.merge({
     ext: '.html',
-    compiler: 'creationix',
+    compiler: 'pete',
     compilerOpts: {}
   }, opts);
 
